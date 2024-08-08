@@ -6,7 +6,7 @@ class Producto(models.Model):
     precio = models.IntegerField()
     
 class Cliente(models.Model):
-    usario = models.CharField(max_length=40)
+    user = models.CharField(max_length=40)
     email = models.EmailField()
     password = models.CharField(max_length=20)
     
