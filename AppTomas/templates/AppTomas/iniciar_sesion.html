@@ -1,0 +1,19 @@
+{% extends 'AppTomas/base.html' %}
+
+{% load static %}
+
+{% block main %}
+
+<form action="" method="POST">
+
+    {% csrf_token %}
+    <table>
+        {{ mi_formulario.as_table }}
+    </table>
+
+    <input type="submit" value="Iniciar Sesion">
+
+
+</form>
+
+{% endblock main %}
